@@ -2,9 +2,8 @@
 
 int main(int argc, char* argv[])
 {
-	//Py_SetProgramName(argv[0]);
-	Py_Initialize();
-	PyRun_SimpleString("from PIL import Image\nim = Image.open('cat.jpg'); im.show()");
+	Py_InitializeEx(0);
+	PyRun_SimpleString("import math\n");
 	Py_Finalize();
 }
 
